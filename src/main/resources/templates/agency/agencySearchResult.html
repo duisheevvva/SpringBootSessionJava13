@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agency Search Results</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1>Agency Search Results</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Use Thymeleaf to iterate over the list of agencies and display them -->
+    <tr th:each="agency : ${agencies}">
+        <td th:text="${agency.name}">Agency Name</td>
+        <td th:text="${agency.country}">Country</td>
+        <td th:text="${agency.phoneNumber}">Phone Number</td>
+        <td th:text="${agency.email}">Email</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+<h1>Agency Search Results</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Use Thymeleaf to iterate over the list of agencies and display them -->
+    <tr th:each="agency : ${agencies}">
+        <td th:text="${agency.name}">Agency Name</td>
+        <td th:text="${agency.country}">Country</td>
+        <td th:text="${agency.phoneNumber}">Phone Number</td>
+        <td th:text="${agency.email}">Email</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

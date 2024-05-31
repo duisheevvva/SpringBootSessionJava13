@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>House Details</title>
+  <meta charset="UTF-8">
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+<h1>House Details</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Description</th>
+    <th>Address</th>
+    <th>House Type</th>
+    <!-- Add more columns if needed -->
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td th:text="${houses.description}">House Description</td>
+    <td th:text="${houses.address}">House Address</td>
+    <td th:text="${houses.houseType}">House Type</td>
+    <!-- Add more cells for additional house details -->
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
